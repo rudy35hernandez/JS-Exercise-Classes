@@ -8,6 +8,7 @@
 */
 
 // EXAMPLE SOLUTION CODE:
+
 class Airplane {
   constructor(name) {
     this.name = name;
@@ -38,10 +39,25 @@ class Airplane {
         + When an instance poops, its `stomach` should empty.
     - Give instances of Person a method `.toString()`:
         + It should return a string with `name` and `age`. Example: "Mary, 50"
-*/
+*/ 
 
 class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.stomach = [];
+}
+  eat(someFood) {
+    if(this.stomach.length < 10){
+      this.stomach.push(someFood)
+    };
+  }
 
+  poop() {
+    this.stomach = [];
+  };
+
+  
 }
 
 /*
