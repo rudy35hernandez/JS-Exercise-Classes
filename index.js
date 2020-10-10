@@ -211,9 +211,10 @@ class ProjectManager extends Instructor {
   }
   standUp(channel) {
     return `${this.name} announces to ${channel}, @${channel} standby times!`
+  }''
+  debugsCode({student}, subject){
+    return `${this.name} debugs ${student}'s code on ${subject}`
   };
-  
-
 }
 
 /*
